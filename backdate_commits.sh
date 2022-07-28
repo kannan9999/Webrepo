@@ -12,7 +12,7 @@ for ((i=1; i<=$num_commits; i++)); do
   random_date=$(date -d "$((RANDOM % 730)) days ago" "+%Y-%m-%dT%H:%M:%S")
 
   # Backdate the commit
-  GIT_COMMITTER_DATE="$random_date" git commit --amend --no-edit --date "$random_date" --author "LIPS-PLAY <felipeviana2016@hotmail.com>"
+  GIT_COMMITTER_DATE="$random_date" git commit --amend --no-edit --date "$random_date" --author "kannan9999 <akk99@hotmail.com>"
 
   # Force-push the updated commit history
   git push --force-with-lease origin main
